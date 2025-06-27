@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Knowledge of Engineering Mechanics</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the definition of force?</p>
+                <input type="radio" name="q1" value="A push or pull on an object"> A push or pull on an object<br>
+                <input type="radio" name="q1" value="The rate of change of velocity"> The rate of change of velocity<br>
+                <input type="radio" name="q1" value="The energy possessed by an object"> The energy possessed by an object<br>
+                <input type="radio" name="q1" value="The mass of an object"> The mass of an object<br>
+            </div>
+
+            <div class="question">
+                <p class="que">2. What is the unit of force in the SI system?</p>
+                <input type="radio" name="q2" value="Newton"> Newton<br>
+                <input type="radio" name="q2" value="Joule"> Joule<br>
+                <input type="radio" name="q2" value="Pascal"> Pascal<br>
+                <input type="radio" name="q2" value="Kilogram"> Kilogram<br>
+            </div>
+
+            <div class="question">
+                <p class="que">3. Which law states that for every action there is an equal and opposite reaction?</p>
+                <input type="radio" name="q3" value="Newton's Third Law"> Newton's Third Law<br>
+                <input type="radio" name="q3" value="Newton's First Law"> Newton's First Law<br>
+                <input type="radio" name="q3" value="Newton's Second Law"> Newton's Second Law<br>
+                <input type="radio" name="q3" value="Law of Conservation of Energy"> Law of Conservation of Energy<br>
+            </div>
+
+            <div class="question">
+                <p class="que">4. What is the definition of moment of force?</p>
+                <input type="radio" name="q4" value="The rotational effect of a force about a point or axis"> The rotational effect of a force about a point or axis<br>
+                <input type="radio" name="q4" value="The amount of force exerted by a body"> The amount of force exerted by a body<br>
+                <input type="radio" name="q4" value="The mass of a body times the acceleration due to gravity"> The mass of a body times the acceleration due to gravity<br>
+                <input type="radio" name="q4" value="The potential energy of a system"> The potential energy of a system<br>
+            </div>
+
+            <div class="question">
+                <p class="que">5. What does the center of gravity represent?</p>
+                <input type="radio" name="q5" value="The point where the total weight of the body acts"> The point where the total weight of the body acts<br>
+                <input type="radio" name="q5" value="The point where the object is balanced"> The point where the object is balanced<br>
+                <input type="radio" name="q5" value="The point of application of the applied force"> The point of application of the applied force<br>
+                <input type="radio" name="q5" value="The mass center of the object"> The mass center of the object<br>
+            </div>
+
+            <div class="question">
+                <p class="que">6. What is the definition of a vector quantity?</p>
+                <input type="radio" name="q6" value="A quantity that has both magnitude and direction"> A quantity that has both magnitude and direction<br>
+                <input type="radio" name="q6" value="A quantity that has only magnitude"> A quantity that has only magnitude<br>
+                <input type="radio" name="q6" value="A quantity that is independent of units"> A quantity that is independent of units<br>
+                <input type="radio" name="q6" value="A quantity that is always constant"> A quantity that is always constant<br>
+            </div>
+
+            <div class="question">
+                <p class="que">7. What is the moment of inertia of a rigid body?</p>
+                <input type="radio" name="q7" value="The resistance of the body to angular acceleration"> The resistance of the body to angular acceleration<br>
+                <input type="radio" name="q7" value="The rotational speed of the body"> The rotational speed of the body<br>
+                <input type="radio" name="q7" value="The energy stored in a rotating body"> The energy stored in a rotating body<br>
+                <input type="radio" name="q7" value="The mass of the body"> The mass of the body<br>
+            </div>
+
+            <div class="question">
+                <p class="que">8. What does the term 'static equilibrium' refer to?</p>
+                <input type="radio" name="q8" value="A state where the sum of forces and the sum of moments are zero"> A state where the sum of forces and the sum of moments are zero<br>
+                <input type="radio" name="q8" value="A state of motion with constant velocity"> A state of motion with constant velocity<br>
+                <input type="radio" name="q8" value="A state where only one force acts on the body"> A state where only one force acts on the body<br>
+                <input type="radio" name="q8" value="A state of rest under the influence of a constant force"> A state of rest under the influence of a constant force<br>
+            </div>
+
+            <div class="question">
+                <p class="que">9. What is Hooke's Law?</p>
+                <input type="radio" name="q9" value="The force required to stretch or compress a spring is proportional to the displacement"> The force required to stretch or compress a spring is proportional to the displacement<br>
+                <input type="radio" name="q9" value="The resistance to deformation is constant for all materials"> The resistance to deformation is constant for all materials<br>
+                <input type="radio" name="q9" value="The stress is proportional to strain for all materials"> The stress is proportional to strain for all materials<br>
+                <input type="radio" name="q9" value="The force acting on an object is proportional to the object's acceleration"> The force acting on an object is proportional to the object's acceleration<br>
+            </div>
+
+            <div class="question">
+                <p class="que">10. What is the term 'work' in mechanics?</p>
+                <input type="radio" name="q10" value="The energy transferred by a force acting through a distance"> The energy transferred by a force acting through a distance<br>
+                <input type="radio" name="q10" value="The change in an object's velocity"> The change in an object's velocity<br>
+                <input type="radio" name="q10" value="The force applied on an object"> The force applied on an object<br>
+                <input type="radio" name="q10" value="The power exerted by a machine"> The power exerted by a machine<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q7.js"></script>
+</body>
+</html>

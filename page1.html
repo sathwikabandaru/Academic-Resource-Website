@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="d-flex flex-column card-container">
+        <h1 class="p1head">Sign Up</h1>
+        <form onsubmit="return validateForm()">
+            <div class="input-group d-flex flex-column">
+
+                <div class="input-field d-flex flex-row">
+                    <div class="d-flex flex-column justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#203c54" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                    </div>
+                    <input type="text" placeholder="Name" name="name" required minlength="3" maxlength="50" pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces">
+                </div>
+
+                <div class="input-field d-flex flex-row">
+                    <div class="d-flex flex-column justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#203c54" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                      </svg>
+
+                    </div>
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+
+                <div class="input-field d-flex flex-row">
+                    <div class="d-flex flex-column justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#203c54" class="bi bi-calendar-date-fill" viewBox="0 0 16 16">
+                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2"/>
+                        <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a13 13 0 0 1 1.313-.805h.632z"/>
+                      </svg>
+  
+                    </div>
+                    <input type="date" placeholder="DOB" name="dob" required>
+                </div>
+
+                <div class="input-field d-flex flex-row">
+                    <div class="d-flex flex-column justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#203c54" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                      </svg>
+
+                    </div>
+                    <input type="password" placeholder="Password" name="password" required minlength="8" title="Password must be at least 8 characters long">
+                </div>
+
+                <div class="input-field d-flex flex-row">
+                    <div class="d-flex flex-column justify-content-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#203c54" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                      </svg>
+
+                    </div>
+                    <input type="password" placeholder="Confirm Password" name="confirmPassword" required minlength="8" title="Password must match">
+                </div>
+
+                <div class="d-flex flex-row justify-content-between">
+                    <button type="submit" class="button button1">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script  src="page1.js"></script>
+</body>
+
+</html>

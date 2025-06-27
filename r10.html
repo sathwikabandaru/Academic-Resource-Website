@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Your Quiz Results</h1>
+        <div id="result"></div>
+        <a href="quiz10.html">Go Back to Quiz</a>
+    </div>
+   <script>
+        const score = localStorage.getItem('quizScore');
+        const result = document.getElementById('result');
+        if (score !== null) {
+            result.textContent = `You scored ${score} out of 10!`;  // Use backticks for string interpolation
+        } else {
+            result.textContent = "No score found. Please complete the quiz first.";
+        }
+        localStorage.removeItem('quizScore');
+    </script>
+</body>
+</html>

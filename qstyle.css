@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("https://wallpaperaccess.com/full/2384075.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container, .result-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.question {
+    margin: 20px 0;
+}
+
+.button {
+    display: block;
+    width: 25%;
+    padding: 10px;
+    background-color:rgb(24, 140, 182);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:20px;
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+button:hover {
+    background-color:grey;
+}
+
+.result-container {
+    text-align: center;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+}
+.mainheading{
+    color:darkblue;
+}
+.que{
+    color:red;
+}

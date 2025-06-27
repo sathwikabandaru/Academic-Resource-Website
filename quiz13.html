@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Knowledge in Java OOP</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is inheritance in Java?</p>
+                <input type="radio" name="q1" value="When one class acquires the properties and behavior of another class"> When one class acquires the properties and behavior of another class<br>
+                <input type="radio" name="q1" value="When a class is created from an interface"> When a class is created from an interface<br>
+                <input type="radio" name="q1" value="When a method is called from an abstract class"> When a method is called from an abstract class<br>
+                <input type="radio" name="q1" value="When multiple methods are overridden in a class"> When multiple methods are overridden in a class<br>
+            </div>
+
+            <div class="question">
+                <p class="que">2. What is polymorphism in Java?</p>
+                <input type="radio" name="q2" value="The ability of a method to do different things based on the object calling it"> The ability of a method to do different things based on the object calling it<br>
+                <input type="radio" name="q2" value="When objects share common properties"> When objects share common properties<br>
+                <input type="radio" name="q2" value="The ability to inherit methods from other classes"> The ability to inherit methods from other classes<br>
+                <input type="radio" name="q2" value="The ability to define a method inside a class"> The ability to define a method inside a class<br>
+            </div>
+
+            <div class="question">
+                <p class="que">3. What is encapsulation in Java?</p>
+                <input type="radio" name="q3" value="The concept of restricting access to the inner workings of an object"> The concept of restricting access to the inner workings of an object<br>
+                <input type="radio" name="q3" value="Creating a method with the same name but different parameters"> Creating a method with the same name but different parameters<br>
+                <input type="radio" name="q3" value="The act of implementing multiple interfaces in one class"> The act of implementing multiple interfaces in one class<br>
+                <input type="radio" name="q3" value="The process of extending classes to create new functionalities"> The process of extending classes to create new functionalities<br>
+            </div>
+
+            <div class="question">
+                <p class="que">4. What is an abstract class in Java?</p>
+                <input type="radio" name="q4" value="A class that cannot be instantiated and can have abstract methods"> A class that cannot be instantiated and can have abstract methods<br>
+                <input type="radio" name="q4" value="A class that contains only static methods"> A class that contains only static methods<br>
+                <input type="radio" name="q4" value="A class that is used to handle exceptions"> A class that is used to handle exceptions<br>
+                <input type="radio" name="q4" value="A class that must implement all interfaces"> A class that must implement all interfaces<br>
+            </div>
+
+            <div class="question">
+                <p class="que">5. What is the purpose of the super keyword in Java?</p>
+                <input type="radio" name="q5" value="It is used to refer to the superclass constructor"> It is used to refer to the superclass constructor<br>
+                <input type="radio" name="q5" value="It is used to create an instance of a subclass"> It is used to create an instance of a subclass<br>
+                <input type="radio" name="q5" value="It is used to call a method from an interface"> It is used to call a method from an interface<br>
+                <input type="radio" name="q5" value="It is used to override a method in the current class"> It is used to override a method in the current class<br>
+            </div>
+
+            <div class="question">
+                <p class="que">6. What is method overloading in Java?</p>
+                <input type="radio" name="q6" value="Defining multiple methods with the same name but different parameters"> Defining multiple methods with the same name but different parameters<br>
+                <input type="radio" name="q6" value="Overriding a method from the parent class"> Overriding a method from the parent class<br>
+                <input type="radio" name="q6" value="Using different return types for the same method"> Using different return types for the same method<br>
+                <input type="radio" name="q6" value="Changing the access modifiers of a method"> Changing the access modifiers of a method<br>
+            </div>
+
+            <div class="question">
+                <p class="que">7. What is the this keyword used for in Java?</p>
+                <input type="radio" name="q7" value="Refers to the current instance of the class"> Refers to the current instance of the class<br>
+                <input type="radio" name="q7" value="Refers to the superclass of the class"> Refers to the superclass of the class<br>
+                <input type="radio" name="q7" value="Refers to the current method being executed"> Refers to the current method being executed<br>
+                <input type="radio" name="q7" value="Refers to the parent class constructor"> Refers to the parent class constructor<br>
+            </div>
+
+            <div class="question">
+                <p class="que">8. What is the significance of the final keyword in Java?</p>
+                <input type="radio" name="q8" value="It is used to define constants, prevent method overriding, and prevent inheritance"> It is used to define constants, prevent method overriding, and prevent inheritance<br>
+                <input type="radio" name="q8" value="It is used to create a method that cannot be called"> It is used to create a method that cannot be called<br>
+                <input type="radio" name="q8" value="It is used to define variables in interfaces only"> It is used to define variables in interfaces only<br>
+                <input type="radio" name="q8" value="It is used to define a superclass constructor"> It is used to define a superclass constructor<br>
+            </div>
+
+            <div class="question">
+                <p class="que">9. What does the instanceof operator do in Java?</p>
+                <input type="radio" name="q9" value="Checks if an object is an instance of a particular class or subclass"> Checks if an object is an instance of a particular class or subclass<br>
+                <input type="radio" name="q9" value="Checks the memory location of an object"> Checks the memory location of an object<br>
+                <input type="radio" name="q9" value="Compares two objects to check if they are equal"> Compares two objects to check if they are equal<br>
+                <input type="radio" name="q9" value="Checks if a method exists in the current class"> Checks if a method exists in the current class<br>
+            </div>
+
+            <div class="question">
+                <p class="que">10. What is an interface in Java?</p>
+                <input type="radio" name="q10" value="A contract that defines a set of abstract methods that implementing classes must define"> A contract that defines a set of abstract methods that implementing classes must define<br>
+                <input type="radio" name="q10" value="A class that cannot be instantiated directly"> A class that cannot be instantiated directly<br>
+                <input type="radio" name="q10" value="A method that can be implemented by any class"> A method that can be implemented by any class<br>
+                <input type="radio" name="q10" value="A class that provides concrete implementations of all methods"> A class that provides concrete implementations of all methods<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q13.js"></script>
+</body>
+</html>

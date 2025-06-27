@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Knowledge on Advanced Data Structures and Algorithms</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the time complexity of accessing an element in a hash table?</p>
+                <input type="radio" name="q1" value="O(1)"> O(1)<br>
+                <input type="radio" name="q1" value="O(n)"> O(n)<br>
+                <input type="radio" name="q1" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q1" value="O(n^2)"> O(n^2)<br>
+            </div>
+
+            <div class="question">
+                <p class="que">2. Which data structure is used in the implementation of recursion?</p>
+                <input type="radio" name="q2" value="Stack"> Stack<br>
+                <input type="radio" name="q2" value="Queue"> Queue<br>
+                <input type="radio" name="q2" value="Array"> Array<br>
+                <input type="radio" name="q2" value="Linked List"> Linked List<br>
+            </div>
+
+            <div class="question">
+                <p class="que">3. What is the time complexity of searching for an element in a balanced binary search tree?</p>
+                <input type="radio" name="q3" value="O(1)"> O(1)<br>
+                <input type="radio" name="q3" value="O(n)"> O(n)<br>
+                <input type="radio" name="q3" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q3" value="O(n log n)"> O(n log n)<br>
+            </div>
+
+            <div class="question">
+                <p class="que">4. What is the worst-case time complexity of QuickSort?</p>
+                <input type="radio" name="q4" value="O(n log n)"> O(n log n)<br>
+                <input type="radio" name="q4" value="O(n^2)"> O(n^2)<br>
+                <input type="radio" name="q4" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q4" value="O(1)"> O(1)<br>
+            </div>
+
+            <div class="question">
+                <p class="que">5. Which algorithm is used to find the shortest path in a weighted graph?</p>
+                <input type="radio" name="q5" value="Dijkstra's Algorithm"> Dijkstra's Algorithm<br>
+                <input type="radio" name="q5" value="Merge Sort"> Merge Sort<br>
+                <input type="radio" name="q5" value="Floyd-Warshall Algorithm"> Floyd-Warshall Algorithm<br>
+                <input type="radio" name="q5" value="Bellman-Ford Algorithm"> Bellman-Ford Algorithm<br>
+            </div>
+
+            <div class="question">
+                <p class="que">6. Which data structure is used for implementing a priority queue?</p>
+                <input type="radio" name="q6" value="Heap"> Heap<br>
+                <input type="radio" name="q6" value="Linked List"> Linked List<br>
+                <input type="radio" name="q6" value="Stack"> Stack<br>
+                <input type="radio" name="q6" value="Array"> Array<br>
+            </div>
+
+            <div class="question">
+                <p class="que">7. What is the worst-case time complexity of an insertion operation in a self-balancing binary search tree?</p>
+                <input type="radio" name="q7" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q7" value="O(n)"> O(n)<br>
+                <input type="radio" name="q7" value="O(1)"> O(1)<br>
+                <input type="radio" name="q7" value="O(n log n)"> O(n log n)<br>
+            </div>
+
+            <div class="question">
+                <p class="que">8. What is the primary disadvantage of using a linked list over an array?</p>
+                <input type="radio" name="q8" value="Random access to elements is not possible"> Random access to elements is not possible<br>
+                <input type="radio" name="q8" value="Memory consumption is higher"> Memory consumption is higher<br>
+                <input type="radio" name="q8" value="Elements cannot be removed"> Elements cannot be removed<br>
+                <input type="radio" name="q8" value="Cannot store homogeneous data types"> Cannot store homogeneous data types<br>
+            </div>
+
+            <div class="question">
+                <p class="que">9. What is a characteristic of a hash table?</p>
+                <input type="radio" name="q9" value="It provides fast access to elements using keys"> It provides fast access to elements using keys<br>
+                <input type="radio" name="q9" value="It is ordered by keys"> It is ordered by keys<br>
+                <input type="radio" name="q9" value="It is implemented using a queue"> It is implemented using a queue<br>
+                <input type="radio" name="q9" value="It uses a linked list for storage"> It uses a linked list for storage<br>
+            </div>
+
+            <div class="question">
+                <p class="que">10. What is the space complexity of Merge Sort?</p>
+                <input type="radio" name="q10" value="O(1)"> O(1)<br>
+                <input type="radio" name="q10" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q10" value="O(n)"> O(n)<br>
+                <input type="radio" name="q10" value="O(n log n)"> O(n log n)<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q12.js"></script>
+</body>
+</html>

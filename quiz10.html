@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Discrete Mathematics & Graph Theory Knowledge</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is a graph in graph theory?</p>
+                <input type="radio" name="q1" value="A set of vertices connected by edges"> A set of vertices connected by edges<br>
+                <input type="radio" name="q1" value="A set of numbers arranged in a grid"> A set of numbers arranged in a grid<br>
+                <input type="radio" name="q1" value="A set of equations"> A set of equations<br>
+                <input type="radio" name="q1" value="A sequence of digits"> A sequence of digits<br>
+            </div>
+
+            <div class="question">
+                <p class="que">2. What is an Eulerian path in a graph?</p>
+                <input type="radio" name="q2" value="A path that visits every edge exactly once"> A path that visits every edge exactly once<br>
+                <input type="radio" name="q2" value="A path that visits every vertex exactly once"> A path that visits every vertex exactly once<br>
+                <input type="radio" name="q2" value="A closed loop of edges"> A closed loop of edges<br>
+                <input type="radio" name="q2" value="A path that visits each vertex at least once"> A path that visits each vertex at least once<br>
+            </div>
+
+            <div class="question">
+                <p class="que">3. What is the degree of a vertex in a graph?</p>
+                <input type="radio" name="q3" value="The number of edges incident to the vertex"> The number of edges incident to the vertex<br>
+                <input type="radio" name="q3" value="The number of edges in the graph"> The number of edges in the graph<br>
+                <input type="radio" name="q3" value="The number of vertices connected to the vertex"> The number of vertices connected to the vertex<br>
+                <input type="radio" name="q3" value="The number of cycles in the graph"> The number of cycles in the graph<br>
+            </div>
+
+            <div class="question">
+                <p class="que">4. What is a bipartite graph?</p>
+                <input type="radio" name="q4" value="A graph whose vertices can be divided into two disjoint sets such that no two vertices within the same set are adjacent"> A graph whose vertices can be divided into two disjoint sets such that no two vertices within the same set are adjacent<br>
+                <input type="radio" name="q4" value="A graph where every vertex is connected to every other vertex"> A graph where every vertex is connected to every other vertex<br>
+                <input type="radio" name="q4" value="A graph that contains no cycles"> A graph that contains no cycles<br>
+                <input type="radio" name="q4" value="A graph where all vertices have the same degree"> A graph where all vertices have the same degree<br>
+            </div>
+
+            <div class="question">
+                <p class="que">5. What does it mean for a graph to be connected?</p>
+                <input type="radio" name="q5" value="There is a path between every pair of vertices in the graph"> There is a path between every pair of vertices in the graph<br>
+                <input type="radio" name="q5" value="The graph contains at least one cycle"> The graph contains at least one cycle<br>
+                <input type="radio" name="q5" value="Every vertex has at least one edge connected to it"> Every vertex has at least one edge connected to it<br>
+                <input type="radio" name="q5" value="The graph has no loops"> The graph has no loops<br>
+            </div>
+
+            <div class="question">
+                <p class="que">6. What is a tree in graph theory?</p>
+                <input type="radio" name="q6" value="A connected acyclic graph"> A connected acyclic graph<br>
+                <input type="radio" name="q6" value="A graph with no edges"> A graph with no edges<br>
+                <input type="radio" name="q6" value="A disconnected graph with cycles"> A disconnected graph with cycles<br>
+                <input type="radio" name="q6" value="A graph where all vertices have the same degree"> A graph where all vertices have the same degree<br>
+            </div>
+
+            <div class="question">
+                <p class="que">7. What is the chromatic number of a graph?</p>
+                <input type="radio" name="q7" value="The minimum number of colors needed to color the vertices of the graph such that no two adjacent vertices have the same color"> The minimum number of colors needed to color the vertices of the graph such that no two adjacent vertices have the same color<br>
+                <input type="radio" name="q7" value="The number of edges in the graph"> The number of edges in the graph<br>
+                <input type="radio" name="q7" value="The number of cycles in the graph"> The number of cycles in the graph<br>
+                <input type="radio" name="q7" value="The number of vertices in the graph"> The number of vertices in the graph<br>
+            </div>
+
+            <div class="question">
+                <p class="que">8. What is a directed graph?</p>
+                <input type="radio" name="q8" value="A graph where edges have a direction, from one vertex to another"> A graph where edges have a direction, from one vertex to another<br>
+                <input type="radio" name="q8" value="A graph where all edges are undirected"> A graph where all edges are undirected<br>
+                <input type="radio" name="q8" value="A graph with no edges"> A graph with no edges<br>
+                <input type="radio" name="q8" value="A graph where each vertex has an equal number of edges"> A graph where each vertex has an equal number of edges<br>
+            </div>
+
+            <div class="question">
+                <p class="que">9. What is a cycle in a graph?</p>
+                <input type="radio" name="q9" value="A path that starts and ends at the same vertex without repeating any edges"> A path that starts and ends at the same vertex without repeating any edges<br>
+                <input type="radio" name="q9" value="A path that visits all vertices exactly once"> A path that visits all vertices exactly once<br>
+                <input type="radio" name="q9" value="A path that visits every edge exactly once"> A path that visits every edge exactly once<br>
+                <input type="radio" name="q9" value="A path that moves in only one direction"> A path that moves in only one direction<br>
+            </div>
+
+            <div class="question">
+                <p class="que">10. What is a planar graph?</p>
+                <input type="radio" name="q10" value="A graph that can be drawn on a plane without any edges crossing"> A graph that can be drawn on a plane without any edges crossing<br>
+                <input type="radio" name="q10" value="A graph where all edges have the same length"> A graph where all edges have the same length<br>
+                <input type="radio" name="q10" value="A graph where all vertices are connected to exactly two other vertices"> A graph where all vertices are connected to exactly two other vertices<br>
+                <input type="radio" name="q10" value="A graph with no edges"> A graph with no edges<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button">Submit Quiz</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="q10.js"></script>
+</body>
+</html>

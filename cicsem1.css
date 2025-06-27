@@ -1,0 +1,62 @@
+.card-container {
+    background-color: white;
+    border-radius: 30px;
+    height: 360px; 
+    width: 300px;
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        height: 200px;
+        width: 100%; 
+        object-fit: cover;
+        margin-bottom: 10px;
+}
+.head{
+    font-size:20px;
+    color:black;
+    margin-bottom:20px;
+}
+.button{
+    width:150px;
+    height:50px;
+    margin-bottom:20px;
+}
+body {
+    background-image: url("https://www.pngkit.com/png/full/248-2488630_secureaplus-for-education-background-wallpaper.png");
+    background-size: cover;
+    height: 100vh;
+}
+.head1{
+    color:white;
+    text-align:center;
+    font-size:40px;
+    font-style:italic;
+    margin-top:50px;
+}
+.button1{
+    color:white;
+    background-color:#0a2d63;
+    border-radius:10px;
+    border-style:solid;
+    width:100px;
+    height:40px;
+    font-size:20px;
+    border-color:#0a2d63;
+    margin-top:40px;
+    margin-right:30px;
+    margin-bottom:20px;
+}
+.button1:hover{
+     color:#0a2d63;
+     background-color:white;
+     border-color:#0a2d63;
+}

@@ -1,0 +1,109 @@
+.image{
+    height:50px;
+    width:50px;
+}
+.bg{
+    background-color:#bff2f9;
+}
+.image1{
+    height:400px;
+    width:450px;
+}
+.size{
+    height:400px;
+    width:450px;
+    margin-left:520px;
+}
+.head {
+    color:#0a2d63;
+    font-size: 58px;
+    margin-top: 0;
+    padding-top: 10px;
+    margin-left:400px;
+}
+
+.para{
+    color:#0a2d63;
+    font-size: 24px;
+    text-align:center;
+}
+.size1{
+    height:100px;
+    width:100%;
+    text-align:center;
+    margin-left:0;
+    margin-right:0;
+}
+.align{
+    background-image:url("https://i.pinimg.com/originals/0c/ea/6f/0cea6fabe4d9d5256e0d1b2474927732.jpg");
+    width:100%;
+    padding-bottom:87px;
+    background-size:cover;
+}
+.align1{
+    background-image:url("https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-teacher-s-college-classroom-coaching-course-poster-background-image_188494.jpg");
+    width:100%;
+    background-size:cover;
+    padding-top:30px;
+    height:100vh;
+}
+.head1 {
+    color:#061B8C;
+    font-size: 60px;
+    text-align:center;
+    padding-top:30px;
+    font-family:serif;
+    font-weight:bold;
+}
+.image2{
+    height:620px;
+    width:950px;
+    padding-top:10px;
+
+}
+.head3{
+    margin-left:150px;
+    margin-right:100px;
+    margin-top:40px;
+    color:#061B8C;
+    margin-bottom:20px;
+    font-style:italic;
+}
+.card-container{
+    height:300px;
+    width:300px;
+    border-radius:20px;
+    background-color:#d7f7f8;
+    margin-left:65px;
+}
+.para3{
+    color:#0a2d63;
+    font-size: 22px;
+    text-align:center;
+    margin:20px;
+    padding-top:30px;
+}
+.card-container:hover{
+    height:400px;
+    width:400px;
+}
+.card-container:hover .para3 {
+    font-size: 32px;
+}
+.button1{
+    color:white;
+    background-color:#0a2d63;
+    border-radius:10px;
+    border-style:solid;
+    width:100px;
+    height:40px;
+    font-size:20px;
+    border-color:#0a2d63;
+    margin-top:40px;
+    margin-right:30px;
+}
+.button1:hover{
+     color:#0a2d63;
+     background-color:white;
+     border-color:#0a2d63;
+}

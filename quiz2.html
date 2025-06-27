@@ -1,0 +1,96 @@
+<html>
+<head>
+    <link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Engineering Chemistry</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the primary component of natural gas?</p>
+                <input type="radio" name="q1" value="Methane"> Methane<br>
+                <input type="radio" name="q1" value="Ethane"> Ethane<br>
+                <input type="radio" name="q1" value="Propane"> Propane<br>
+                <input type="radio" name="q1" value="Butane"> Butane<br>
+            </div>
+
+            <div class="question">
+                <p class="que">2. Which of the following is a strong acid?</p>
+                <input type="radio" name="q2" value="Hydrochloric acid (HCl)"> Hydrochloric acid (HCl)<br>
+                <input type="radio" name="q2" value="Acetic acid (CH₃COOH)"> Acetic acid (CH₃COOH)<br>
+                <input type="radio" name="q2" value="Carbonic acid (H₂CO₃)"> Carbonic acid (H₂CO₃)<br>
+                <input type="radio" name="q2" value="Citric acid (C₆H₈O₇)"> Citric acid (C₆H₈O₇)<br>
+            </div>
+
+            <div class="question">
+                <p class="que">3. What is the unit of molarity?</p>
+                <input type="radio" name="q3" value="moles per liter (mol/L)"> moles per liter (mol/L)<br>
+                <input type="radio" name="q3" value="grams per liter (g/L)"> grams per liter (g/L)<br>
+                <input type="radio" name="q3" value="moles per kilogram (mol/kg)"> moles per kilogram (mol/kg)<br>
+                <input type="radio" name="q3" value="grams per mole (g/mol)"> grams per mole (g/mol)<br>
+            </div>
+
+            <div class="question">
+                <p class="que">4. What is the main purpose of a catalyst in a chemical reaction?</p>
+                <input type="radio" name="q4" value="To increase the rate of the reaction"> To increase the rate of the reaction<br>
+                <input type="radio" name="q4" value="To decrease the rate of the reaction"> To decrease the rate of the reaction<br>
+                <input type="radio" name="q4" value="To increase the yield of the product"> To increase the yield of the product<br>
+                <input type="radio" name="q4" value="To change the equilibrium constant"> To change the equilibrium constant<br>
+            </div>
+
+            <div class="question">
+                <p class="que">5. Which type of polymer is used to make synthetic rubber?</p>
+                <input type="radio" name="q5" value="Neoprene"> Neoprene<br>
+                <input type="radio" name="q5" value="Nylon"> Nylon<br>
+                <input type="radio" name="q5" value="Polyethylene"> Polyethylene<br>
+                <input type="radio" name="q5" value="Teflon"> Teflon<br>
+            </div>
+
+            <div class="question">
+                <p class="que">6. What is the pH of a neutral solution at 25°C?</p>
+                <input type="radio" name="q6" value="7"> 7<br>
+                <input type="radio" name="q6" value="1"> 1<br>
+                <input type="radio" name="q6" value="14"> 14<br>
+                <input type="radio" name="q6" value="0"> 0<br>
+            </div>
+
+            <div class="question">
+                <p class="que">7. What is the formula of Benzene?</p>
+                <input type="radio" name="q7" value="C₆H₆"> C₆H₆<br>
+                <input type="radio" name="q7" value="C₄H₁₀"> C₄H₁₀<br>
+                <input type="radio" name="q7" value="C₂H₄"> C₂H₄<br>
+                <input type="radio" name="q7" value="C₃H₈"> C₃H₈<br>
+            </div>
+
+            <div class="question">
+                <p class="que">8. What is electrolysis commonly used for?</p>
+                <input type="radio" name="q8" value="To extract metals from their ores"> To extract metals from their ores<br>
+                <input type="radio" name="q8" value="To mix chemical compounds"> To mix chemical compounds<br>
+                <input type="radio" name="q8" value="To produce nuclear energy"> To produce nuclear energy<br>
+                <input type="radio" name="q8" value="To reduce pollution"> To reduce pollution<br>
+            </div>
+
+            <div class="question">
+                <p class="que">9. Which gas is known as 'laughing gas'?</p>
+                <input type="radio" name="q9" value="Nitrous oxide (N₂O)"> Nitrous oxide (N₂O)<br>
+                <input type="radio" name="q9" value="Carbon dioxide (CO₂)"> Carbon dioxide (CO₂)<br>
+                <input type="radio" name="q9" value="Sulfur dioxide (SO₂)"> Sulfur dioxide (SO₂)<br>
+                <input type="radio" name="q9" value="Oxygen (O₂)"> Oxygen (O₂)<br>
+            </div>
+
+            <div class="question">
+                <p class="que">10. What is a common use of hydrochloric acid (HCl) in industry?</p>
+                <input type="radio" name="q10" value="To remove rust from steel"> To remove rust from steel<br>
+                <input type="radio" name="q10" value="To produce plastic"> To produce plastic<br>
+                <input type="radio" name="q10" value="To manufacture glass"> To manufacture glass<br>
+                <input type="radio" name="q10" value="To neutralize acidic soil"> To neutralize acidic soil<br>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+            <button type="submit" class="button d-flex">Submit Quiz</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="q2.js"></script>
+</body>
+</html>

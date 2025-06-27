@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image:url("https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin:0;
+}
+.card-container {
+    background-color: white;
+    height: 85%;
+    width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align:center;
+}
+.p1head{
+    text-align:center;
+    color:#203c54;
+    font-size:40px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+.input-field{
+    background:#eaeaea;
+    margin:15px     0;
+    margin-bottom:10px;
+    border-radius:3px;
+    padding:7px;
+}
+input{
+    background:transparent;
+    border:0;
+    outline:0;
+    padding:10px 0px;
+    width:100%;
+    font-size:16px;
+}
+.input-field svg {
+    margin-right: 10px;
+}
+.p1para{
+    color:#203c54;
+}
+.button{
+    color:white;
+    border-color:white;
+    background-color:#0c2b4a;
+    border-radius:10px;
+    height:50px;
+    width:120px;
+    font-size:20px;
+    margin-top:15px;
+    border-style:solid;
+}
+
+.button:hover {
+    background-color:white; 
+    color:#0c2b4a;
+    border-color:#0c2b4a;
+}
+
+.button1{
+    margin-left:120px;
+}
+ 

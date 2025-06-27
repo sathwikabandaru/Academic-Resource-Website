@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Knowledge of Basic Electrical and Electronics Engineering</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is Ohm's Law?</p>
+                <input type="radio" name="q1" value="V = IR"> V = IR<br>
+                <input type="radio" name="q1" value="V = I/R"> V = I/R<br>
+                <input type="radio" name="q1" value="V = I^2R"> V = I^2R<br>
+                <input type="radio" name="q1" value="V = R/I"> V = R/I<br>
+            </div>
+
+            <div class="question">
+                <p class="que">2. What does a capacitor do in an electrical circuit?</p>
+                <input type="radio" name="q2" value="Stores electrical energy"> Stores electrical energy<br>
+                <input type="radio" name="q2" value="Resists current flow"> Resists current flow<br>
+                <input type="radio" name="q2" value="Converts electrical energy into light"> Converts electrical energy into light<br>
+                <input type="radio" name="q2" value="Increases voltage"> Increases voltage<br>
+            </div>
+
+            <div class="question">
+                <p class="que">3. What is the unit of electrical resistance?</p>
+                <input type="radio" name="q3" value="Ohm"> Ohm<br>
+                <input type="radio" name="q3" value="Volt"> Volt<br>
+                <input type="radio" name="q3" value="Ampere"> Ampere<br>
+                <input type="radio" name="q3" value="Joule"> Joule<br>
+            </div>
+
+            <div class="question">
+                <p class="que">4. Which of the following is an active electronic component?</p>
+                <input type="radio" name="q4" value="Transistor"> Transistor<br>
+                <input type="radio" name="q4" value="Resistor"> Resistor<br>
+                <input type="radio" name="q4" value="Capacitor"> Capacitor<br>
+                <input type="radio" name="q4" value="Inductor"> Inductor<br>
+            </div>
+
+            <div class="question">
+                <p class="que">5. What is the formula for power in an electrical circuit?</p>
+                <input type="radio" name="q5" value="P = VI"> P = VI<br>
+                <input type="radio" name="q5" value="P = V^2/R"> P = V^2/R<br>
+                <input type="radio" name="q5" value="P = I^2R"> P = I^2R<br>
+                <input type="radio" name="q5" value="P = IR"> P = IR<br>
+            </div>
+
+            <div class="question">
+                <p class="que">6. What is the function of a diode in a circuit?</p>
+                <input type="radio" name="q6" value="Allows current to flow in one direction only"> Allows current to flow in one direction only<br>
+                <input type="radio" name="q6" value="Stores electrical energy"> Stores electrical energy<br>
+                <input type="radio" name="q6" value="Resists current flow"> Resists current flow<br>
+                <input type="radio" name="q6" value="Generates electrical energy"> Generates electrical energy<br>
+            </div>
+
+            <div class="question">
+                <p class="que">7. What is the difference between AC and DC?</p>
+                <input type="radio" name="q7" value="AC changes direction periodically, while DC flows in one direction"> AC changes direction periodically, while DC flows in one direction<br>
+                <input type="radio" name="q7" value="AC is used in batteries, while DC is used in power plants"> AC is used in batteries, while DC is used in power plants<br>
+                <input type="radio" name="q7" value="AC has higher voltage than DC"> AC has higher voltage than DC<br>
+                <input type="radio" name="q7" value="AC is used for long-distance transmission, while DC is used for short-distance transmission"> AC is used for long-distance transmission, while DC is used for short-distance transmission<br>
+            </div>
+
+            <div class="question">
+                <p class="que">8. What is the function of a transformer?</p>
+                <input type="radio" name="q8" value="Changes the voltage level of alternating current"> Changes the voltage level of alternating current<br>
+                <input type="radio" name="q8" value="Stores electrical energy"> Stores electrical energy<br>
+                <input type="radio" name="q8" value="Converts DC to AC"> Converts DC to AC<br>
+                <input type="radio" name="q8" value="Converts mechanical energy to electrical energy"> Converts mechanical energy to electrical energy<br>
+            </div>
+
+            <div class="question">
+                <p class="que">9. What is the unit of capacitance?</p>
+                <input type="radio" name="q9" value="Farad"> Farad<br>
+                <input type="radio" name="q9" value="Ohm"> Ohm<br>
+                <input type="radio" name="q9" value="Tesla"> Tesla<br>
+                <input type="radio" name="q9" value="Hertz"> Hertz<br>
+            </div>
+
+            <div class="question">
+                <p class="que">10. What does a ground in an electrical circuit refer to?</p>
+                <input type="radio" name="q10" value="A reference point with zero voltage"> A reference point with zero voltage<br>
+                <input type="radio" name="q10" value="A point where all resistors are connected"> A point where all resistors are connected<br>
+                <input type="radio" name="q10" value="A high voltage terminal"> A high voltage terminal<br>
+                <input type="radio" name="q10" value="A battery terminal"> A battery terminal<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q8.js"></script>
+</body>
+</html>

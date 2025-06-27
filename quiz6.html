@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Engineering Physics Quiz</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the SI unit of Force?</p>
+                <input type="radio" name="q1" value="Newton"> Newton<br>
+                <input type="radio" name="q1" value="Joule"> Joule<br>
+                <input type="radio" name="q1" value="Pascal"> Pascal<br>
+                <input type="radio" name="q1" value="Coulomb"> Coulomb<br>
+            </div>
+
+            <div class="question">
+                <p class="que">2. What does the First Law of Thermodynamics state?</p>
+                <input type="radio" name="q2" value="Energy cannot be created or destroyed, only transformed"> Energy cannot be created or destroyed, only transformed<br>
+                <input type="radio" name="q2" value="Force equals mass times acceleration"> Force equals mass times acceleration<br>
+                <input type="radio" name="q2" value="The pressure of a gas is directly proportional to its volume"> The pressure of a gas is directly proportional to its volume<br>
+                <input type="radio" name="q2" value="Energy is released when a chemical bond is formed"> Energy is released when a chemical bond is formed<br>
+            </div>
+
+            <div class="question">
+                <p class="que">3. What is the speed of light in vacuum?</p>
+                <input type="radio" name="q3" value="3 × 10^8 m/s"> 3 × 10^8 m/s<br>
+                <input type="radio" name="q3" value="1 × 10^8 m/s"> 1 × 10^8 m/s<br>
+                <input type="radio" name="q3" value="3 × 10^6 m/s"> 3 × 10^6 m/s<br>
+                <input type="radio" name="q3" value="9.8 m/s²"> 9.8 m/s²<br>
+            </div>
+
+            <div class="question">
+                <p class="que">4. What is the principle behind Newton's Third Law?</p>
+                <input type="radio" name="q4" value="For every action, there is an equal and opposite reaction"> For every action, there is an equal and opposite reaction<br>
+                <input type="radio" name="q4" value="The total momentum of an isolated system is constant"> The total momentum of an isolated system is constant<br>
+                <input type="radio" name="q4" value="Force equals mass times acceleration"> Force equals mass times acceleration<br>
+                <input type="radio" name="q4" value="Work done is equal to force times displacement"> Work done is equal to force times displacement<br>
+            </div>
+
+            <div class="question">
+                <p class="que">5. What is the formula for calculating kinetic energy?</p>
+                <input type="radio" name="q5" value="1/2 mv^2"> 1/2 mv²<br>
+                <input type="radio" name="q5" value="mgh"> mgh<br>
+                <input type="radio" name="q5" value="F × d"> F × d<br>
+                <input type="radio" name="q5" value="pV"> pV<br>
+            </div>
+
+            <div class="question">
+                <p class="que">6. What is the SI unit of electric current?</p>
+                <input type="radio" name="q6" value="Ampere"> Ampere<br>
+                <input type="radio" name="q6" value="Volt"> Volt<br>
+                <input type="radio" name="q6" value="Coulomb"> Coulomb<br>
+                <input type="radio" name="q6" value="Ohm"> Ohm<br>
+            </div>
+
+            <div class="question">
+                <p class="que">7. What is the formula for the period of a simple pendulum?</p>
+                <input type="radio" name="q7" value="2π√(l/g)"> 2π√(l/g)<br>
+                <input type="radio" name="q7" value="2π√(g/l)"> 2π√(g/l)<br>
+                <input type="radio" name="q7" value="π√(l/g)"> π√(l/g)<br>
+                <input type="radio" name="q7" value="π√(g/l)"> π√(g/l)<br>
+            </div>
+
+            <div class="question">
+                <p class="que">8. What is Ohm's Law?</p>
+                <input type="radio" name="q8" value="V = IR"> V = IR<br>
+                <input type="radio" name="q8" value="V = P/I"> V = P/I<br>
+                <input type="radio" name="q8" value="I = V/R"> I = V/R<br>
+                <input type="radio" name="q8" value="P = IV"> P = IV<br>
+            </div>
+
+            <div class="question">
+                <p class="que">9. What is the equation of motion for a freely falling object under gravity?</p>
+                <input type="radio" name="q9" value="s = ut + 1/2 at²"> s = ut + 1/2 at²<br>
+                <input type="radio" name="q9" value="v = u + at"> v = u + at<br>
+                <input type="radio" name="q9" value="s = ut + at²"> s = ut + at²<br>
+                <input type="radio" name="q9" value="v² = u² + 2as"> v² = u² + 2as<br>
+            </div>
+
+            <div class="question">
+                <p class="que">10. What is the law of reflection?</p>
+                <input type="radio" name="q10" value="The angle of incidence equals the angle of reflection"> The angle of incidence equals the angle of reflection<br>
+                <input type="radio" name="q10" value="The angle of reflection is always 90 degrees"> The angle of reflection is always 90 degrees<br>
+                <input type="radio" name="q10" value="The angle of incidence is greater than the angle of reflection"> The angle of incidence is greater than the angle of reflection<br>
+                <input type="radio" name="q10" value="Light bends as it passes from one medium to another"> Light bends as it passes from one medium to another<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q6.js"></script>
+</body>
+</html>

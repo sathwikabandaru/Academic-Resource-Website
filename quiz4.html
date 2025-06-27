@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Engineering Graphics Quiz: Test Your Knowledge</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the main purpose of engineering drawing?</p>
+                <input type="radio" name="q1" value="To communicate technical information about a product"> To communicate technical information about a product<br>
+                <input type="radio" name="q1" value="To decorate a product"> To decorate a product<br>
+                <input type="radio" name="q1" value="To display product prices"> To display product prices<br>
+                <input type="radio" name="q1" value="To measure the dimensions of a product"> To measure the dimensions of a product<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">2. What is the standard unit of measurement used in engineering drawings?</p>
+                <input type="radio" name="q2" value="Millimeters (mm)"> Millimeters (mm)<br>
+                <input type="radio" name="q2" value="Centimeters (cm)"> Centimeters (cm)<br>
+                <input type="radio" name="q2" value="Inches (in)"> Inches (in)<br>
+                <input type="radio" name="q2" value="Feet (ft)"> Feet (ft)<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">3. What is the purpose of the first angle projection system?</p>
+                <input type="radio" name="q3" value="To represent the object as if viewed from the front, with the object placed in the first quadrant"> To represent the object as if viewed from the front, with the object placed in the first quadrant<br>
+                <input type="radio" name="q3" value="To represent the object as if viewed from the side"> To represent the object as if viewed from the side<br>
+                <input type="radio" name="q3" value="To represent the object from a top-down view"> To represent the object from a top-down view<br>
+                <input type="radio" name="q3" value="To represent the object from the rear view"> To represent the object from the rear view<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">4. What does the term 'orthographic projection' refer to?</p>
+                <input type="radio" name="q4" value="A method of representing three-dimensional objects in two dimensions"> A method of representing three-dimensional objects in two dimensions<br>
+                <input type="radio" name="q4" value="A technique for shading objects in 3D"> A technique for shading objects in 3D<br>
+                <input type="radio" name="q4" value="A method for representing the edges of a shape"> A method for representing the edges of a shape<br>
+                <input type="radio" name="q4" value="A process to convert a 2D image into a 3D model"> A process to convert a 2D image into a 3D model<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">5. What is an isometric view in engineering drawing?</p>
+                <input type="radio" name="q5" value="A 3D view where all three axes are equally foreshortened"> A 3D view where all three axes are equally foreshortened<br>
+                <input type="radio" name="q5" value="A 2D view of the object"> A 2D view of the object<br>
+                <input type="radio" name="q5" value="A 3D view showing only two axes"> A 3D view showing only two axes<br>
+                <input type="radio" name="q5" value="A 3D view with one axis completely vertical"> A 3D view with one axis completely vertical<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">6. What does the term 'tolerances' refer to in engineering drawings?</p>
+                <input type="radio" name="q6" value="Permissible variations in dimensions"> Permissible variations in dimensions<br>
+                <input type="radio" name="q6" value="The number of decimal places to be used"> The number of decimal places to be used<br>
+                <input type="radio" name="q6" value="The weight of the product"> The weight of the product<br>
+                <input type="radio" name="q6" value="The number of layers in the design"> The number of layers in the design<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">7. Which of the following lines is used to represent edges of a visible object?</p>
+                <input type="radio" name="q7" value="Continuous thick lines"> Continuous thick lines<br>
+                <input type="radio" name="q7" value="Dashed lines"> Dashed lines<br>
+                <input type="radio" name="q7" value="Thin dotted lines"> Thin dotted lines<br>
+                <input type="radio" name="q7" value="Thin continuous lines"> Thin continuous lines<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">8. What is the primary purpose of sectioning in engineering graphics?</p>
+                <input type="radio" name="q8" value="To show internal features of an object"> To show internal features of an object<br>
+                <input type="radio" name="q8" value="To highlight the external features of an object"> To highlight the external features of an object<br>
+                <input type="radio" name="q8" value="To represent the object's color"> To represent the object's color<br>
+                <input type="radio" name="q8" value="To simplify the drawing"> To simplify the drawing<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">9. What is a 'hidden line' used to represent in an engineering drawing?</p>
+                <input type="radio" name="q9" value="Edges or features not visible from the current view"> Edges or features not visible from the current view<br>
+                <input type="radio" name="q9" value="Visible features of the object"> Visible features of the object<br>
+                <input type="radio" name="q9" value="Dimensions and sizes of the object"> Dimensions and sizes of the object<br>
+                <input type="radio" name="q9" value="Construction lines for sketching"> Construction lines for sketching<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">10. What is the scale used in engineering drawings?</p>
+                <input type="radio" name="q10" value="A ratio that defines the proportion between the drawing and the actual object"> A ratio that defines the proportion between the drawing and the actual object<br>
+                <input type="radio" name="q10" value="The size of the drawing paper"> The size of the drawing paper<br>
+                <input type="radio" name="q10" value="The thickness of the lines used in the drawing"> The thickness of the lines used in the drawing<br>
+                <input type="radio" name="q10" value="The orientation of the drawing on the paper"> The orientation of the drawing on the paper<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q4.js"></script>
+</body>
+</html>

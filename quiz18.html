@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Cryptography & Network Security Knowledge</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the main purpose of encryption in network security?</p>
+                <input type="radio" name="q1" value="To secure data by transforming it into an unreadable format"> To secure data by transforming it into an unreadable format<br>
+                <input type="radio" name="q1" value="To increase data transmission speed"> To increase data transmission speed<br>
+                <input type="radio" name="q1" value="To store data in a compressed format"> To store data in a compressed format<br>
+                <input type="radio" name="q1" value="To verify the integrity of data"> To verify the integrity of data<br>
+            </div>
+
+            <div class="question">
+                <p class="que">2. What does the term 'hashing' refer to in cryptography?</p>
+                <input type="radio" name="q2" value="Transforming data into a fixed-size string of characters"> Transforming data into a fixed-size string of characters<br>
+                <input type="radio" name="q2" value="Encrypting data using a private key"> Encrypting data using a private key<br>
+                <input type="radio" name="q2" value="Generating a random key for encryption"> Generating a random key for encryption<br>
+                <input type="radio" name="q2" value="Creating a digital signature"> Creating a digital signature<br>
+            </div>
+
+            <div class="question">
+                <p class="que">3. Which of the following is an example of a symmetric key encryption algorithm?</p>
+                <input type="radio" name="q3" value="AES"> AES<br>
+                <input type="radio" name="q3" value="RSA"> RSA<br>
+                <input type="radio" name="q3" value="ECC"> ECC<br>
+                <input type="radio" name="q3" value="DSA"> DSA<br>
+            </div>
+
+            <div class="question">
+                <p class="que">4. What does 'PKI' stand for in the context of cryptography?</p>
+                <input type="radio" name="q4" value="Public Key Infrastructure"> Public Key Infrastructure<br>
+                <input type="radio" name="q4" value="Private Key Implementation"> Private Key Implementation<br>
+                <input type="radio" name="q4" value="Public Knowledge Information"> Public Knowledge Information<br>
+                <input type="radio" name="q4" value="Private Key Interface"> Private Key Interface<br>
+            </div>
+
+            <div class="question">
+                <p class="que">5. What is a 'man-in-the-middle' attack?</p>
+                <input type="radio" name="q5" value="An attack where the attacker intercepts and potentially alters communication between two parties"> An attack where the attacker intercepts and potentially alters communication between two parties<br>
+                <input type="radio" name="q5" value="An attack that prevents a system from functioning properly"> An attack that prevents a system from functioning properly<br>
+                <input type="radio" name="q5" value="An attack that compromises the confidentiality of data"> An attack that compromises the confidentiality of data<br>
+                <input type="radio" name="q5" value="An attack that uses social engineering to trick users"> An attack that uses social engineering to trick users<br>
+            </div>
+
+            <div class="question">
+                <p class="que">6. What is the primary goal of a Digital Signature?</p>
+                <input type="radio" name="q6" value="To verify the authenticity and integrity of a message"> To verify the authenticity and integrity of a message<br>
+                <input type="radio" name="q6" value="To provide encryption for communication"> To provide encryption for communication<br>
+                <input type="radio" name="q6" value="To generate a random key for encryption"> To generate a random key for encryption<br>
+                <input type="radio" name="q6" value="To hash the data to check for its integrity"> To hash the data to check for its integrity<br>
+            </div>
+
+            <div class="question">
+                <p class="que">7. Which of the following is a key advantage of asymmetric encryption?</p>
+                <input type="radio" name="q7" value="It uses two keys: a public key for encryption and a private key for decryption"> It uses two keys: a public key for encryption and a private key for decryption<br>
+                <input type="radio" name="q7" value="It uses the same key for both encryption and decryption"> It uses the same key for both encryption and decryption<br>
+                <input type="radio" name="q7" value="It is faster than symmetric encryption"> It is faster than symmetric encryption<br>
+                <input type="radio" name="q7" value="It is only used for hashing purposes"> It is only used for hashing purposes<br>
+            </div>
+
+            <div class="question">
+                <p class="que">8. What is the purpose of a VPN (Virtual Private Network)?</p>
+                <input type="radio" name="q8" value="To create a secure and encrypted connection over a less secure network, like the internet"> To create a secure and encrypted connection over a less secure network, like the internet<br>
+                <input type="radio" name="q8" value="To increase the bandwidth of a network"> To increase the bandwidth of a network<br>
+                <input type="radio" name="q8" value="To monitor and log all network traffic"> To monitor and log all network traffic<br>
+                <input type="radio" name="q8" value="To limit access to certain websites on the network"> To limit access to certain websites on the network<br>
+            </div>
+
+            <div class="question">
+                <p class="que">9. Which cryptographic technique does SSL/TLS use to secure web communications?</p>
+                <input type="radio" name="q9" value="Public Key Infrastructure (PKI)"> Public Key Infrastructure (PKI)<br>
+                <input type="radio" name="q9" value="Digital Signatures"> Digital Signatures<br>
+                <input type="radio" name="q9" value="Symmetric Encryption"> Symmetric Encryption<br>
+                <input type="radio" name="q9" value="Hash Functions"> Hash Functions<br>
+            </div>
+
+            <div class="question">
+                <p class="que">10. What does the term 'Firewall' refer to in network security?</p>
+                <input type="radio" name="q10" value="A security system that monitors and controls incoming and outgoing network traffic"> A security system that monitors and controls incoming and outgoing network traffic<br>
+                <input type="radio" name="q10" value="A type of encryption algorithm used in secure communications"> A type of encryption algorithm used in secure communications<br>
+                <input type="radio" name="q10" value="A protocol used for secure data transmission"> A protocol used for secure data transmission<br>
+                <input type="radio" name="q10" value="A digital signature mechanism used in authentication"> A digital signature mechanism used in authentication<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+        <script src="q18.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Knowledge on Design and Analysis of Algorithms</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the time complexity of binary search in the worst case?</p>
+                <input type="radio" name="q1" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q1" value="O(n)"> O(n)<br>
+                <input type="radio" name="q1" value="O(n log n)"> O(n log n)<br>
+                <input type="radio" name="q1" value="O(1)"> O(1)<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">2. What is the space complexity of QuickSort?</p>
+                <input type="radio" name="q2" value="O(n)"> O(n)<br>
+                <input type="radio" name="q2" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q2" value="O(n log n)"> O(n log n)<br>
+                <input type="radio" name="q2" value="O(1)"> O(1)<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">3. What type of problem does the 'Greedy' algorithm solve?</p>
+                <input type="radio" name="q3" value="Optimization problems"> Optimization problems<br>
+                <input type="radio" name="q3" value="Sorting problems"> Sorting problems<br>
+                <input type="radio" name="q3" value="Search problems"> Search problems<br>
+                <input type="radio" name="q3" value="Divide and conquer problems"> Divide and conquer problems<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">4. Which of the following is a Divide and Conquer algorithm?</p>
+                <input type="radio" name="q4" value="Merge Sort"> Merge Sort<br>
+                <input type="radio" name="q4" value="Dijkstra's Algorithm"> Dijkstra's Algorithm<br>
+                <input type="radio" name="q4" value="Bubble Sort"> Bubble Sort<br>
+                <input type="radio" name="q4" value="Linear Search"> Linear Search<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">5. Which of the following is a correct example of a dynamic programming problem?</p>
+                <input type="radio" name="q5" value="Knapsack Problem"> Knapsack Problem<br>
+                <input type="radio" name="q5" value="Selection Sort"> Selection Sort<br>
+                <input type="radio" name="q5" value="Insertion Sort"> Insertion Sort<br>
+                <input type="radio" name="q5" value="Binary Search"> Binary Search<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">6. What is the primary characteristic of a greedy algorithm?</p>
+                <input type="radio" name="q6" value="It makes decisions based on future events"> It makes decisions based on future events<br>
+                <input type="radio" name="q6" value="It solves problems by breaking them down into smaller subproblems"> It solves problems by breaking them down into smaller subproblems<br>
+                <input type="radio" name="q6" value="It selects the best option available at each step"> It selects the best option available at each step<br>
+                <input type="radio" name="q6" value="It always guarantees an optimal solution"> It always guarantees an optimal solution<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">7. What is the best-case time complexity of Merge Sort?</p>
+                <input type="radio" name="q7" value="O(n log n)"> O(n log n)<br>
+                <input type="radio" name="q7" value="O(n)"> O(n)<br>
+                <input type="radio" name="q7" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q7" value="O(1)"> O(1)<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">8. What is the space complexity of the Merge Sort algorithm?</p>
+                <input type="radio" name="q8" value="O(n)"> O(n)<br>
+                <input type="radio" name="q8" value="O(log n)"> O(log n)<br>
+                <input type="radio" name="q8" value="O(1)"> O(1)<br>
+                <input type="radio" name="q8" value="O(n^2)"> O(n^2)<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">9. Which of the following algorithms has a time complexity of O(n^2) in the worst case?</p>
+                <input type="radio" name="q9" value="Bubble Sort"> Bubble Sort<br>
+                <input type="radio" name="q9" value="Merge Sort"> Merge Sort<br>
+                <input type="radio" name="q9" value="Quick Sort"> Quick Sort<br>
+                <input type="radio" name="q9" value="Binary Search"> Binary Search<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">10. Which of the following is the correct definition of Big O notation?</p>
+                <input type="radio" name="q10" value="It represents the worst-case scenario of an algorithm's time complexity"> It represents the worst-case scenario of an algorithm's time complexity<br>
+                <input type="radio" name="q10" value="It represents the best-case scenario of an algorithm's time complexity"> It represents the best-case scenario of an algorithm's time complexity<br>
+                <input type="radio" name="q10" value="It is a measure of the memory consumption of an algorithm"> It is a measure of the memory consumption of an algorithm<br>
+                <input type="radio" name="q10" value="It measures the input size for which the algorithm works"> It measures the input size for which the algorithm works<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q16.js"></script>
+</body>
+</html>

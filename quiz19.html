@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Cybersecurity Quiz: Test Your Knowledge</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What does CIA stand for in cybersecurity?</p>
+                <input type="radio" name="q1" value="Confidentiality, Integrity, Availability"> Confidentiality, Integrity, Availability<br>
+                <input type="radio" name="q1" value="Confidentiality, Identification, Access"> Confidentiality, Identification, Access<br>
+                <input type="radio" name="q1" value="Control, Integrity, Authentication"> Control, Integrity, Authentication<br>
+                <input type="radio" name="q1" value="Control, Identification, Availability"> Control, Identification, Availability<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">2. What is a firewall used for?</p>
+                <input type="radio" name="q2" value="To block unauthorized access to or from a private network"> To block unauthorized access to or from a private network<br>
+                <input type="radio" name="q2" value="To monitor network traffic for errors"> To monitor network traffic for errors<br>
+                <input type="radio" name="q2" value="To encrypt data sent over the network"> To encrypt data sent over the network<br>
+                <input type="radio" name="q2" value="To provide access control to specific users"> To provide access control to specific users<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">3. What is phishing?</p>
+                <input type="radio" name="q3" value="An attempt to acquire sensitive information by impersonating a trustworthy entity"> An attempt to acquire sensitive information by impersonating a trustworthy entity<br>
+                <input type="radio" name="q3" value="A type of virus that damages files on a system"> A type of virus that damages files on a system<br>
+                <input type="radio" name="q3" value="A method of protecting passwords using encryption"> A method of protecting passwords using encryption<br>
+                <input type="radio" name="q3" value="A method of securing data by backing it up regularly"> A method of securing data by backing it up regularly<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">4. Which of the following is a common type of malware?</p>
+                <input type="radio" name="q4" value="Trojan Horse"> Trojan Horse<br>
+                <input type="radio" name="q4" value="Watermarking"> Watermarking<br>
+                <input type="radio" name="q4" value="URL Shortening"> URL Shortening<br>
+                <input type="radio" name="q4" value="Data Redundancy"> Data Redundancy<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">5. What is multi-factor authentication (MFA)?</p>
+                <input type="radio" name="q5" value="A security process that requires more than one form of authentication to access a system"> A security process that requires more than one form of authentication to access a system<br>
+                <input type="radio" name="q5" value="A process of scanning for viruses before accessing a website"> A process of scanning for viruses before accessing a website<br>
+                <input type="radio" name="q5" value="A way of encrypting email communications"> A way of encrypting email communications<br>
+                <input type="radio" name="q5" value="A process for backing up sensitive data"> A process for backing up sensitive data<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">6. What is encryption used for in cybersecurity?</p>
+                <input type="radio" name="q6" value="To convert data into a secure format that can only be read by authorized parties"> To convert data into a secure format that can only be read by authorized parties<br>
+                <input type="radio" name="q6" value="To monitor the number of attempts to break into a network"> To monitor the number of attempts to break into a network<br>
+                <input type="radio" name="q6" value="To block malicious websites from being accessed"> To block malicious websites from being accessed<br>
+                <input type="radio" name="q6" value="To provide a record of system activity"> To provide a record of system activity<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">7. What is the purpose of a VPN (Virtual Private Network)?</p>
+                <input type="radio" name="q7" value="To create a secure connection between a device and the internet"> To create a secure connection between a device and the internet<br>
+                <input type="radio" name="q7" value="To monitor network traffic for unauthorized access"> To monitor network traffic for unauthorized access<br>
+                <input type="radio" name="q7" value="To scan for viruses and malware in real-time"> To scan for viruses and malware in real-time<br>
+                <input type="radio" name="q7" value="To provide a cloud storage solution"> To provide a cloud storage solution<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">8. What is a DDoS (Distributed Denial of Service) attack?</p>
+                <input type="radio" name="q8" value="An attack that floods a network or server with traffic to overwhelm it"> An attack that floods a network or server with traffic to overwhelm it<br>
+                <input type="radio" name="q8" value="An attack that steals data from a system"> An attack that steals data from a system<br>
+                <input type="radio" name="q8" value="An attack that installs malware on a user's computer"> An attack that installs malware on a user's computer<br>
+                <input type="radio" name="q8" value="An attack that targets software vulnerabilities to gain unauthorized access"> An attack that targets software vulnerabilities to gain unauthorized access<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">9. What is a zero-day vulnerability?</p>
+                <input type="radio" name="q9" value="A security flaw that is exploited before the vendor can release a fix"> A security flaw that is exploited before the vendor can release a fix<br>
+                <input type="radio" name="q9" value="A flaw in the design of a system that cannot be patched"> A flaw in the design of a system that cannot be patched<br>
+                <input type="radio" name="q9" value="A vulnerability that only exists in outdated systems"> A vulnerability that only exists in outdated systems<br>
+                <input type="radio" name="q9" value="A flaw that is fixed immediately upon discovery"> A flaw that is fixed immediately upon discovery<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">10. What is the principle of least privilege in cybersecurity?</p>
+                <input type="radio" name="q10" value="Users should only have access to the resources necessary for their role"> Users should only have access to the resources necessary for their role<br>
+                <input type="radio" name="q10" value="Users should have full access to all resources in a system"> Users should have full access to all resources in a system<br>
+                <input type="radio" name="q10" value="Users should not have any access to sensitive data"> Users should not have any access to sensitive data<br>
+                <input type="radio" name="q10" value="Users should be allowed to bypass security protocols in emergency situations"> Users should be allowed to bypass security protocols in emergency situations<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+        <script src="q19.js"></script>
+</body>
+</html>

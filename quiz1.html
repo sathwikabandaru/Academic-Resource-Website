@@ -1,0 +1,100 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Knowledge</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the rank of a matrix?</p>
+                <input type="radio" name="q1" value="Maximum number of linearly independent rows or columns"> Maximum number of linearly independent rows or columns<br>
+                <input type="radio" name="q1" value="Number of rows"> Number of rows<br>
+                <input type="radio" name="q1" value="Number of columns"> Number of columns<br>
+                <input type="radio" name="q1" value="Determinant of the matrix"> Determinant of the matrix<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">2. What is the inverse of a matrix?</p>
+                <input type="radio" name="q2" value="A matrix that when multiplied by the original matrix gives the identity matrix"> A matrix that when multiplied by the original matrix gives the identity matrix<br>
+                <input type="radio" name="q2" value="A matrix with all entries as zero"> A matrix with all entries as zero<br>
+                <input type="radio" name="q2" value="A matrix with all diagonal entries equal to one"> A matrix with all diagonal entries equal to one<br>
+                <input type="radio" name="q2" value="A matrix that has a determinant of zero"> A matrix that has a determinant of zero<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">3. What is a dot product of two vectors?</p>
+                <input type="radio" name="q3" value="The sum of the products of corresponding components of the two vectors"> The sum of the products of corresponding components of the two vectors<br>
+                <input type="radio" name="q3" value="The magnitude of the product of the two vectors"> The magnitude of the product of the two vectors<br>
+                <input type="radio" name="q3" value="The sum of the squares of the components"> The sum of the squares of the components<br>
+                <input type="radio" name="q3" value="The cross product of the vectors"> The cross product of the vectors<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">4. Which of the following is the definition of eigenvalues of a matrix?</p>
+                <input type="radio" name="q4" value="Scalars that satisfy the equation A*v = λ*v"> Scalars that satisfy the equation A*v = λ*v<br>
+                <input type="radio" name="q4" value="Solutions to the system of equations Ax = b"> Solutions to the system of equations Ax = b<br>
+                <input type="radio" name="q4" value="Row reductions to the matrix A"> Row reductions to the matrix A<br>
+                <input type="radio" name="q4" value="Diagonal entries of the matrix A"> Diagonal entries of the matrix A<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">5. What is the cross product of two vectors?</p>
+                <input type="radio" name="q5" value="A vector perpendicular to both vectors"> A vector perpendicular to both vectors<br>
+                <input type="radio" name="q5" value="A scalar quantity that represents the angle between the vectors"> A scalar quantity that represents the angle between the vectors<br>
+                <input type="radio" name="q5" value="The sum of the vectors"> The sum of the vectors<br>
+                <input type="radio" name="q5" value="A scalar product of the vectors"> A scalar product of the vectors<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">6. What is a matrix determinant?</p>
+                <input type="radio" name="q6" value="A scalar value that can be computed from the elements of the matrix"> A scalar value that can be computed from the elements of the matrix<br>
+                <input type="radio" name="q6" value="The sum of all the elements in the matrix"> The sum of all the elements in the matrix<br>
+                <input type="radio" name="q6" value="A vector perpendicular to the matrix"> A vector perpendicular to the matrix<br>
+                <input type="radio" name="q6" value="The inverse of the matrix"> The inverse of the matrix<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">7. What is the identity matrix?</p>
+                <input type="radio" name="q7" value="A square matrix with ones on the diagonal and zeros elsewhere"> A square matrix with ones on the diagonal and zeros elsewhere<br>
+                <input type="radio" name="q7" value="A square matrix with all elements equal to one"> A square matrix with all elements equal to one<br>
+                <input type="radio" name="q7" value="A matrix with all elements equal to zero"> A matrix with all elements equal to zero<br>
+                <input type="radio" name="q7" value="A diagonal matrix with random values"> A diagonal matrix with random values<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">8. What does a matrix product A * B represent?</p>
+                <input type="radio" name="q8" value="The result of multiplying each row of A with each column of B"> The result of multiplying each row of A with each column of B<br>
+                <input type="radio" name="q8" value="The sum of matrices A and B"> The sum of matrices A and B<br>
+                <input type="radio" name="q8" value="The transpose of matrix A"> The transpose of matrix A<br>
+                <input type="radio" name="q8" value="The inverse of matrix A"> The inverse of matrix A<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">9. What is a vector space?</p>
+                <input type="radio" name="q9" value="A set of vectors that is closed under vector addition and scalar multiplication"> A set of vectors that is closed under vector addition and scalar multiplication<br>
+                <input type="radio" name="q9" value="A set of vectors with the same magnitude"> A set of vectors with the same magnitude<br>
+                <input type="radio" name="q9" value="A set of vectors that only includes zero vectors"> A set of vectors that only includes zero vectors<br>
+                <input type="radio" name="q9" value="A set of orthogonal vectors"> A set of orthogonal vectors<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">10. What is a scalar in linear algebra?</p>
+                <input type="radio" name="q10" value="A single numerical value"> A single numerical value<br>
+                <input type="radio" name="q10" value="A matrix with a single row"> A matrix with a single row<br>
+                <input type="radio" name="q10" value="A vector with zero components"> A vector with zero components<br>
+                <input type="radio" name="q10" value="A matrix with equal rows and columns"> A matrix with equal rows and columns<br>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+               <button type="submit" class="button" onClick="page9button1()">Submit Quiz</button>
+            </div>
+        </form>
+    </div>
+
+        <script src="q1.js"></script>
+</body>
+</html>

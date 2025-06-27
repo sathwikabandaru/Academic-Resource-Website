@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Knowledge on IoT Architecture and Protocols</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the main function of the perception layer in IoT architecture?</p>
+                <input type="radio" name="q1" value="Collects data from the environment using sensors and actuators"> Collects data from the environment using sensors and actuators<br>
+                <input type="radio" name="q1" value="Controls the processing and routing of data in IoT devices"> Controls the processing and routing of data in IoT devices<br>
+                <input type="radio" name="q1" value="Manages communication between IoT devices and external systems"> Manages communication between IoT devices and external systems<br>
+                <input type="radio" name="q1" value="Stores data for analysis in the cloud"> Stores data for analysis in the cloud<br>
+            </div>
+
+            <div class="question">
+                <p class="que">2. Which protocol is commonly used for short-range communication between IoT devices?</p>
+                <input type="radio" name="q2" value="Bluetooth Low Energy (BLE)"> Bluetooth Low Energy (BLE)<br>
+                <input type="radio" name="q2" value="HTTP"> HTTP<br>
+                <input type="radio" name="q2" value="MQTT"> MQTT<br>
+                <input type="radio" name="q2" value="CoAP"> CoAP<br>
+            </div>
+
+            <div class="question">
+                <p class="que">3. What is the role of the network layer in IoT architecture?</p>
+                <input type="radio" name="q3" value="Facilitates communication and routing of data between devices and the cloud"> Facilitates communication and routing of data between devices and the cloud<br>
+                <input type="radio" name="q3" value="Collects and processes data from sensors"> Collects and processes data from sensors<br>
+                <input type="radio" name="q3" value="Analyzes and stores the data in databases"> Analyzes and stores the data in databases<br>
+                <input type="radio" name="q3" value="Provides user interfaces for IoT applications"> Provides user interfaces for IoT applications<br>
+            </div>
+
+            <div class="question">
+                <p class="que">4. Which protocol is commonly used in IoT for messaging and data exchange between devices?</p>
+                <input type="radio" name="q4" value="MQTT"> MQTT<br>
+                <input type="radio" name="q4" value="FTP"> FTP<br>
+                <input type="radio" name="q4" value="TCP/IP"> TCP/IP<br>
+                <input type="radio" name="q4" value="SMTP"> SMTP<br>
+            </div>
+
+            <div class="question">
+                <p class="que">5. What is the function of the application layer in the IoT architecture?</p>
+                <input type="radio" name="q5" value="Defines the applications and services that IoT devices provide to end-users"> Defines the applications and services that IoT devices provide to end-users<br>
+                <input type="radio" name="q5" value="Routes data packets between devices"> Routes data packets between devices<br>
+                <input type="radio" name="q5" value="Manages hardware resources of IoT devices"> Manages hardware resources of IoT devices<br>
+                <input type="radio" name="q5" value="Secures communication between IoT devices"> Secures communication between IoT devices<br>
+            </div>
+
+            <div class="question">
+                <p class="que">6. Which IoT protocol is optimized for low-power devices?</p>
+                <input type="radio" name="q6" value="Zigbee"> Zigbee<br>
+                <input type="radio" name="q6" value="HTTP"> HTTP<br>
+                <input type="radio" name="q6" value="CoAP"> CoAP<br>
+                <input type="radio" name="q6" value="Bluetooth"> Bluetooth<br>
+            </div>
+
+            <div class="question">
+                <p class="que">7. Which of the following is NOT a typical IoT application?</p>
+                <input type="radio" name="q7" value="Smart home automation"> Smart home automation<br>
+                <input type="radio" name="q7" value="Predictive maintenance in industrial settings"> Predictive maintenance in industrial settings<br>
+                <input type="radio" name="q7" value="Cloud storage management"> Cloud storage management<br>
+                <input type="radio" name="q7" value="Environmental monitoring"> Environmental monitoring<br>
+            </div>
+
+            <div class="question">
+                <p class="que">8. What is the primary advantage of using MQTT in IoT?</p>
+                <input type="radio" name="q8" value="It is lightweight and optimized for low-bandwidth networks"> It is lightweight and optimized for low-bandwidth networks<br>
+                <input type="radio" name="q8" value="It provides encryption for all IoT messages"> It provides encryption for all IoT messages<br>
+                <input type="radio" name="q8" value="It ensures that data is stored on the cloud for backup"> It ensures that data is stored on the cloud for backup<br>
+                <input type="radio" name="q8" value="It supports high-definition video streaming"> It supports high-definition video streaming<br>
+            </div>
+
+            <div class="question">
+                <p class="que">9. What is CoAP protocol used for in IoT?</p>
+                <input type="radio" name="q9" value="It is used for lightweight communication in constrained networks"> It is used for lightweight communication in constrained networks<br>
+                <input type="radio" name="q9" value="It is used for secure communication between devices"> It is used for secure communication between devices<br>
+                <input type="radio" name="q9" value="It is used for long-range communication"> It is used for long-range communication<br>
+                <input type="radio" name="q9" value="It is used for video streaming in IoT devices"> It is used for video streaming in IoT devices<br>
+            </div>
+
+            <div class="question">
+                <p class="que">10. Which protocol is widely used in IoT for data encryption and security?</p>
+                <input type="radio" name="q10" value="TLS/SSL"> TLS/SSL<br>
+                <input type="radio" name="q10" value="MQTT"> MQTT<br>
+                <input type="radio" name="q10" value="HTTP"> HTTP<br>
+                <input type="radio" name="q10" value="CoAP"> CoAP<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q14.js"></script>
+</body>
+</html>

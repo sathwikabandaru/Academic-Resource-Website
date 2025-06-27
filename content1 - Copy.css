@@ -1,0 +1,109 @@
+.image{
+       width:50px;
+       height:50px;
+
+}
+.bg{
+    background-color:transparent;
+}
+.align{
+     
+    width:100%;
+    background-size:cover;
+    padding-top:30px;
+}
+.card-container{
+    background-color:white;
+    border-radius:10px;
+    width:1000px;
+    height:350px;
+    margin-left:250px;
+    padding:20px;
+    margin-bottom:30px;
+
+}
+body{
+    background-image:url("https://wallpapertag.com/wallpaper/full/7/3/8/350870-amazing-website-background-1920x1080.jpg");
+    background-size:cover;
+}
+.content{
+    margin-left:20px;
+    font-size:25px;
+    color:purple;
+    margin-bottom:20px;
+}
+span{
+    color:black;
+    font-size:22px;
+    margin-left:5px;
+}
+.card-container:hover {
+    background-color:pink;
+}
+.bookheading{
+    text-align:center;
+    color:white;
+    font-style:italic;
+    margin-bottom:30px;
+    font-weight:bold;
+}
+.card-container1{
+    background-color:white;
+    border-radius:10px;
+    width:350px;
+    height:530px;
+    margin-left:100px;
+    padding:20px;
+    margin-bottom:30px;
+
+}
+.image1{
+    margin-bottom:20px;
+    height:300px;
+    width:250px;
+}
+.head{
+    color:blueviolet;
+    text-align:center;
+    font-size:23px;
+}
+.content1{
+    margin-left:20px;
+    font-size:20px;
+    color:purple;
+    margin-bottom:15px;
+    text-align:center;
+}
+.button {
+    font-size: 30px;  
+    padding: 20px 40px;  
+    background-color:pink;
+    color: purple;  
+    border-radius: 10px;
+    margin-bottom:20px;
+}
+button:hover {
+    background-color: purple;
+    color:white; 
+}
+.button1{
+    color:purple;
+    background-color:pink;
+    border-radius:10px;
+    border-style:solid;
+    width:100px;
+    height:40px;
+    font-size:20px;
+    border-color:#0a2d63;
+    margin-top:40px;
+    margin-right:30px;
+    margin-bottom:30px;
+}
+.button1:hover{
+     color:white;
+     background-color:purple;
+     border-color:#0a2d63;
+}
+.bookheading{
+    color:purple;
+}

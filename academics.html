@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Academics</title>
+ <style type="text/css">
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+body{
+ font-family: arial;
+ background-image:url(" https://static.vecteezy.com/system/resources/previews/000/625/480/original/vector-abstract-geometric-background-in-light-colors.jpg");
+}
+.main{
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+     vertical-align: top;
+     overflow: hidden;
+     position: relative;
+}
+.card:hover{
+   box-shadow: 4px 4px 21px black;
+}
+.image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; 
+ }
+
+.title{
+  text-align: center;
+  padding: 10px;
+ }
+
+.heading{
+  font-size:50px;
+  color:#0a2d63;
+
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding:8px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .3s;
+  cursor: pointer;
+  box-shadow: 1px 1px 18px black;
+}
+
+.header{
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 1%;
+   padding: 15px;
+   color: rgb(40, 13, 46);
+}
+.header h1 {
+   margin: 0;
+   font-size: 44px;
+   text-align: center;
+   font-family:'Times New Roman', Times, serif;
+   margin-top:20px;
+}
+
+.sliding-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  padding: 15px;
+  border-radius: 5px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  display: none; /* Initially hidden */
+  z-index: 1;
+}
+h3,h4 {
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.953);
+}
+
+.sliding-panel.open {
+  display: block; /* Make visible when open */
+  transform: translateX(0); /* Slide into view */
+}
+
+.sliding-panel h3 {
+  margin: 10px 0;
+}
+
+.sliding-panel button {
+  margin: 5px;
+  padding: 8px;
+}
+.button1{
+    color:white;
+    background-color:#0a2d63;
+    border-radius:10px;
+    border-style:solid;
+    width:100px;
+    height:40px;
+    font-size:20px;
+    border-color:#0a2d63;
+    margin-top:40px;
+    margin-right:30px;
+    margin-left:1300px;
+}
+.button1:hover{
+     color:#0a2d63;
+     background-color:white;
+     border-color:#0a2d63;
+
+}
+
+</style>
+</head>
+<body>
+   <div class="header">
+      <h1>Available Branches</h1>
+  </div>
+
+<div class="main">
+
+<div class="card">
+<div class="image">
+   <img src="https://i.pinimg.com/564x/e6/ec/86/e6ec86d140147e8dc72514dbd2af546f.jpg">
+</div>
+<div class="title">
+   <h1>CIC</h1>
+</div>
+<div class="des">
+ <p>CSE(IOT and Cyber Security Including Blockchain Technology)</p>
+<button onclick="togglePanel(this)">View Branch</button>
+</div>
+<div class="sliding-panel">
+  <h3>Select Year and Semester</h3>
+  <h4>Year 1</h4>
+  <button onClick="page3button1()">Semester I</button>
+  <button onClick="page3button2()">Semester II</button>
+  <h4>Year 2</h4>
+  <button onClick="page3button3()">Semester I</button>
+  <button >Semester II</button>
+  <h4>Year 3</h4>
+  <button onClick="page3button5()">Semester I</button>
+  <button onClick="page3button6()">Semester II</button>
+  <h4>Year 4</h4>
+  <button>Semester I</button>
+  <button>Semester II</button>
+</div>
+</div>
+<!--card:2-->
+<div class="card">
+
+    <div class="image">
+       <img src="https://i.pinimg.com/564x/87/f6/3a/87f63acafc8dfe4c3652c296364bab90.jpg">
+    </div>
+    <div class="title">
+     <h1>CSE</h1>
+    </div>
+    <div class="des">
+     <p>Computer Science and Engineering &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <button onclick="togglePanel(this)">View Branch</button>
+    </div>
+    <div class="sliding-panel">
+        <h3>Select Year and Semester</h3>
+        <h4>Year 1</h4>
+        <button>Semester I</button>
+        <button>Semester II</button>
+        <h4>Year 2</h4>
+        <button>Semester I</button>
+        <button>Semester II</button>
+        <h4>Year 3</h4>
+        <button>Semester I</button>
+        <button>Semester II</button>
+        <h4>Year 4</h4>
+        <button>Semester I</button>
+        <button>Semester II</button>
+      </div>
+    </div>
+    <!--card:3-->
+    <div class="card">
+
+        <div class="image">
+           <img src="https://veracitiz.com/blog/wp-content/uploads/2023/07/Role-of-Artificial-Intelligence-in-Revolutionizing-Data-Processing-Services.jpg">
+        </div>
+        <div class="title">
+         <h1>AIML</h1>
+        </div>
+        <div class="des">
+         <p>Artificial Intelligence and Machine Learning</p>
+        <button onclick="togglePanel(this)">View Branch</button>
+        </div>
+        <div class="sliding-panel">
+            <h3>Select Year and Semester</h3>
+            <h4>Year 1</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 2</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 3</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 4</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+        </div>
+    </div>
+    <!--card:4-->
+    <div class="card">
+        <div class="image">
+           <img src="https://i.pinimg.com/564x/14/cb/c1/14cbc10e848a3e5e794c11b57bf1ba3c.jpg">
+        </div>
+        <div class="title">
+         <h1>AIDS</h1>
+        </div>
+        <div class="des">
+         <p>Artificial Intelligence and Data Science &nbsp;&nbsp;&nbsp;</p>
+        <button onclick="togglePanel(this)">View Branch</button>
+        </div>
+        <div class="sliding-panel">
+            <h3>Select Year and Semester</h3>
+            <h4>Year 1</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 2</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 3</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 4</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+        </div>
+    </div>
+    <!--card:5-->
+    <div class="card">
+        <div class="image">
+           <img src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901789.jpg?t=st=1730745342~exp=1730748942~hmac=f9ba00fe740cac51448933e0e259727204ccaaba102d9be24e9cb679183b60f7&w=1060">
+        </div>
+        <div class="title">
+         <h1>CSD</h1>
+        </div>
+        <div class="des">
+         <p>Computer Science and Design</p>
+        <button onclick="togglePanel(this)">View Branch</button>
+        </div>
+        <div class="sliding-panel">
+            <h3>Select Year and Semester</h3>
+            <h4>Year 1</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 2</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 3</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 4</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+        </div>
+    </div>
+    <!--card:5-->
+    <div class="card">
+        <div class="image">
+           <img src="https://i.pinimg.com/564x/3c/a1/20/3ca120e497e1c02930b096d61aa24627.jpg">
+        </div>
+        <div class="title">
+         <h1>IT</h1>
+        </div>
+        <div class="des">
+         <p> Information Technology </p>
+        <button onclick="togglePanel(this)">View Branch</button>
+        </div>
+        <div class="sliding-panel">
+            <h3>Select Year and Semester</h3>
+            <h4>Year 1</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 2</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 3</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 4</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+        </div>
+    </div>
+    <!--card:6 -->
+    <div class="card">
+        <div class="image">
+           <img src="https://i.pinimg.com/564x/33/e3/f7/33e3f7fafeeaef1dfc4b481be2dc52ac.jpg">
+        </div>
+        <div class="title">
+         <h1>MECHANICAL</h1>
+        </div>
+        <div class="des">
+         <p>Mechanical Engineering</p>
+        <button onclick="togglePanel(this)">View Branch</button>
+        </div>
+        <div class="sliding-panel">
+            <h3>Select Year and Semester</h3>
+            <h4>Year 1</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 2</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 3</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 4</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+        </div>
+    </div>
+    <!--card:7 -->
+    <div class="card">
+        <div class="image">
+           <img src="https://i.pinimg.com/736x/de/a5/42/dea542ad8398a836a085625048bd5025.jpg">
+        </div>
+        <div class="title">
+         <h1>CIVIL</h1>
+        </div>
+        <div class="des">
+         <p>Civil Engineering</p>
+        <button onclick="togglePanel(this)">View Branch</button>
+        </div>
+        <div class="sliding-panel">
+            <h3>Select Year and Semester</h3>
+            <h4>Year 1</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 2</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 3</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 4</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+        </div>
+    </div>
+    <!--card:8 -->    
+    <div class="card">
+        <div class="image">
+           <img src="https://i.pinimg.com/564x/5d/a8/e1/5da8e17ebacc31984761bf3e823a7edf.jpg">
+        </div>
+        <div class="title">
+         <h1>ECE</h1>
+        </div>
+        <div class="des">
+         <p>Electrical and Communications Engineering</p>
+        <button onclick="togglePanel(this)">View Branch</button>
+        </div>
+        <div class="sliding-panel">
+            <h3>Select Year and Semester</h3>
+            <h4>Year 1</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 2</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 3</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+            <h4>Year 4</h4>
+            <button>Semester I</button>
+            <button>Semester II</button>
+        </div>
+    </div>
+    <!--card:9 -->
+   <div class="card">
+    <div class="image">
+       <img src="https://i.pinimg.com/564x/55/bd/a2/55bda2eb95d9623cc663222ca369df11.jpg">
+    </div>
+    <div class="title">
+     <h1>EEE</h1>
+    </div>
+    <div class="des">
+     <p>Electrical and Electronics Engineering &nbsp;&nbsp;&nbsp;</p>
+    <button onclick="togglePanel(this)">View Branch</button>
+    </div>
+    <div class="sliding-panel">
+        <h3>Select Year and Semester</h3>
+        <h4>Year 1</h4>
+        <button>Semester I</button>
+        <button>Semester II</button>
+        <h4>Year 2</h4>
+        <button>Semester I</button>
+        <button>Semester II</button>
+        <h4>Year 3</h4>
+        <button>Semester I</button>
+        <button>Semester II</button>
+        <h4>Year 4</h4>
+        <button>Semester I</button>
+        <button>Semester II</button>
+    </div>
+    </div>
+    <div class="d-flex flex-row justify-content-end">
+      <button class="button1" onClick="page2button()">Back</button>
+    </div>
+</div>
+<script>
+    function togglePanel(button) {
+      var panel = button.parentElement.nextElementSibling;      
+      document.querySelectorAll('.sliding-panel.open').forEach(openPanel => {
+        if (openPanel !== panel) openPanel.classList.remove('open');
+      });
+      
+      if (panel && panel.classList.contains("sliding-panel")) {
+        panel.classList.toggle("open");
+      }
+    }
+    function page3button1() {
+      window.location.href = "cicsem1.html";
+    }
+    function page3button2() {
+      window.location.href = "cicsem2.html";
+    }
+    function page3button3() {
+      window.location.href = "cicsem3.html";
+    }
+    function page3button5() {
+      window.location.href = "cicsem5.html";
+    }
+    function page3button6() {
+      window.location.href = "cicsem6.html";
+    }
+    function page2button() {
+    window.location.href = "page3.html";
+    }
+    
+    document.addEventListener('click', function(event) {
+      var isClickInsideCard = event.target.closest('.card');
+      
+      if (!isClickInsideCard) {
+        document.querySelectorAll('.sliding-panel.open').forEach(panel => {
+          panel.classList.remove('open');
+        });
+      }
+    });
+    </script>
+</body>
+</html>

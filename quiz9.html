@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your C Language Knowledge</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the correct syntax to declare a variable in C?</p>
+                <input type="radio" name="q1" value="int x;"> int x;<br>
+                <input type="radio" name="q1" value="int x = 5;"> int x = 5;<br>
+                <input type="radio" name="q1" value="x int = 5;"> x int = 5;<br>
+                <input type="radio" name="q1" value="int = x;"> int = x;<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">2. What is the output of the following C code: printf("%d", 3 + 4 * 2);?</p>
+                <input type="radio" name="q2" value="11"> 11<br>
+                <input type="radio" name="q2" value="14"> 14<br>
+                <input type="radio" name="q2" value="7"> 7<br>
+                <input type="radio" name="q2" value="5"> 5<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">3. How do you insert a comment in C?</p>
+                <input type="radio" name="q3" value="/* This is a comment /"> / This is a comment */<br>
+                <input type="radio" name="q3" value="// This is a comment"> // This is a comment<br>
+                <input type="radio" name="q3" value="<!-- This is a comment -->"> <!-- This is a comment --> <br>
+                <input type="radio" name="q3" value="** This is a comment **"> ** This is a comment **<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">4. What is the purpose of the main() function in C?</p>
+                <input type="radio" name="q4" value="To declare variables"> To declare variables<br>
+                <input type="radio" name="q4" value="To define the entry point of the program"> To define the entry point of the program<br>
+                <input type="radio" name="q4" value="To execute the return statement"> To execute the return statement<br>
+                <input type="radio" name="q4" value="To allocate memory"> To allocate memory<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">5. Which of the following is used to terminate a C program?</p>
+                <input type="radio" name="q5" value="exit(0);"> exit(0);<br>
+                <input type="radio" name="q5" value="return 0;"> return 0;<br>
+                <input type="radio" name="q5" value="exit(1);"> exit(1);<br>
+                <input type="radio" name="q5" value="terminate();"> terminate();<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">6. Which operator is used for multiplication in C?</p>
+                <input type="radio" name="q6" value="*"> *<br>
+                <input type="radio" name="q6" value="/"> /<br>
+                <input type="radio" name="q6" value="%"> %<br>
+                <input type="radio" name="q6" value="+"> +<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">7. What does scanf() function do in C?</p>
+                <input type="radio" name="q7" value="It is used to input data from the user"> It is used to input data from the user<br>
+                <input type="radio" name="q7" value="It is used to print data on the screen"> It is used to print data on the screen<br>
+                <input type="radio" name="q7" value="It is used to convert data types"> It is used to convert data types<br>
+                <input type="radio" name="q7" value="It terminates a program"> It terminates a program<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">8. What is the result of the expression 5/2 in C?</p>
+                <input type="radio" name="q8" value="2.5"> 2.5<br>
+                <input type="radio" name="q8" value="2"> 2<br>
+                <input type="radio" name="q8" value="3"> 3<br>
+                <input type="radio" name="q8" value="0"> 0<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">9. Which header file is required to use the printf() function in C?</p>
+                <input type="radio" name="q9" value="stdio.h"> stdio.h<br>
+                <input type="radio" name="q9" value="stdlib.h"> stdlib.h<br>
+                <input type="radio" name="q9" value="conio.h"> conio.h<br>
+                <input type="radio" name="q9" value="math.h"> math.h<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">10. What does the return keyword do in C?</p>
+                <input type="radio" name="q10" value="Exits the program and returns a value to the operating system"> Exits the program and returns a value to the operating system<br>
+                <input type="radio" name="q10" value="Assigns a value to a variable"> Assigns a value to a variable<br>
+                <input type="radio" name="q10" value="Starts a loop"> Starts a loop<br>
+                <input type="radio" name="q10" value="Declares a new function"> Declares a new function<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q9.js"></script>
+</body>
+</html>

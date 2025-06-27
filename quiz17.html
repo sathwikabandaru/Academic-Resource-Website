@@ -1,0 +1,97 @@
+<html>
+<head>
+<link rel="stylesheet" href="qstyle.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="mainheading">Quiz: Test Your Knowledge on Software Engineering</h1>
+        <form id="quizForm" onsubmit="return submitQuiz(event)">
+            <div class="question">
+                <p class="que">1. What is the purpose of software requirements analysis?</p>
+                <input type="radio" name="q1" value="To define what the software will do and its constraints"> To define what the software will do and its constraints<br>
+                <input type="radio" name="q1" value="To design the software architecture"> To design the software architecture<br>
+                <input type="radio" name="q1" value="To implement the code"> To implement the code<br>
+                <input type="radio" name="q1" value="To test the software for bugs"> To test the software for bugs<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">2. What is a use case in software engineering?</p>
+                <input type="radio" name="q2" value="A description of how a user interacts with a system"> A description of how a user interacts with a system<br>
+                <input type="radio" name="q2" value="A programming language used to create the system"> A programming language used to create the system<br>
+                <input type="radio" name="q2" value="A testing method to find bugs in software"> A testing method to find bugs in software<br>
+                <input type="radio" name="q2" value="A process to check code quality"> A process to check code quality<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">3. What does the term 'refactoring' mean in software engineering?</p>
+                <input type="radio" name="q3" value="Changing the code to improve its structure without altering its functionality"> Changing the code to improve its structure without altering its functionality<br>
+                <input type="radio" name="q3" value="Testing the software to ensure it works properly"> Testing the software to ensure it works properly<br>
+                <input type="radio" name="q3" value="Writing new code to add features"> Writing new code to add features<br>
+                <input type="radio" name="q3" value="Documenting the code for future developers"> Documenting the code for future developers<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">4. Which of the following is the Agile methodology primarily focused on?</p>
+                <input type="radio" name="q4" value="Frequent delivery of small, working pieces of software"> Frequent delivery of small, working pieces of software<br>
+                <input type="radio" name="q4" value="Long development cycles and minimal changes"> Long development cycles and minimal changes<br>
+                <input type="radio" name="q4" value="Extensive documentation and rigid processes"> Extensive documentation and rigid processes<br>
+                <input type="radio" name="q4" value="One large release after full development"> One large release after full development<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">5. What is a software design pattern?</p>
+                <input type="radio" name="q5" value="A reusable solution to a commonly occurring problem in software design"> A reusable solution to a commonly occurring problem in software design<br>
+                <input type="radio" name="q5" value="A programming language feature used for error handling"> A programming language feature used for error handling<br>
+                <input type="radio" name="q5" value="A debugging tool for software engineers"> A debugging tool for software engineers<br>
+                <input type="radio" name="q5" value="A method for measuring software performance"> A method for measuring software performance<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">6. Which of the following is a principle of Object-Oriented Design?</p>
+                <input type="radio" name="q6" value="Encapsulation, inheritance, and polymorphism"> Encapsulation, inheritance, and polymorphism<br>
+                <input type="radio" name="q6" value="Modularity, scalability, and code repetition"> Modularity, scalability, and code repetition<br>
+                <input type="radio" name="q6" value="Data normalization and code compression"> Data normalization and code compression<br>
+                <input type="radio" name="q6" value="Efficient memory allocation and low-level programming"> Efficient memory allocation and low-level programming<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">7. What is version control used for in software development?</p>
+                <input type="radio" name="q7" value="Tracking changes to the codebase over time"> Tracking changes to the codebase over time<br>
+                <input type="radio" name="q7" value="Running automated tests on the code"> Running automated tests on the code<br>
+                <input type="radio" name="q7" value="Optimizing the performance of the software"> Optimizing the performance of the software<br>
+                <input type="radio" name="q7" value="Managing the hardware resources of a server"> Managing the hardware resources of a server<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">8. What is the purpose of a unit test?</p>
+                <input type="radio" name="q8" value="To test individual components or functions of the software for correctness"> To test individual components or functions of the software for correctness<br>
+                <input type="radio" name="q8" value="To test the system as a whole, ensuring all components work together"> To test the system as a whole, ensuring all components work together<br>
+                <input type="radio" name="q8" value="To measure the software's overall performance and load handling"> To measure the software's overall performance and load handling<br>
+                <input type="radio" name="q8" value="To check if the software is user-friendly"> To check if the software is user-friendly<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">9. What is the main goal of software testing?</p>
+                <input type="radio" name="q9" value="To find and fix bugs or issues in the software"> To find and fix bugs or issues in the software<br>
+                <input type="radio" name="q9" value="To improve the software's performance"> To improve the software's performance<br>
+                <input type="radio" name="q9" value="To increase the software's market share"> To increase the software's market share<br>
+                <input type="radio" name="q9" value="To make the software more aesthetically pleasing"> To make the software more aesthetically pleasing<br>
+            </div>
+
+            <div class="question">
+                <p  class="que">10. What is the main purpose of continuous integration in software development?</p>
+                <input type="radio" name="q10" value="To automatically merge code changes from multiple developers and run tests"> To automatically merge code changes from multiple developers and run tests<br>
+                <input type="radio" name="q10" value="To continuously release new versions of the software to end users"> To continuously release new versions of the software to end users<br>
+                <input type="radio" name="q10" value="To monitor the performance of the software in real-time"> To monitor the performance of the software in real-time<br>
+                <input type="radio" name="q10" value="To manage the project's budget and resources"> To manage the project's budget and resources<br>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <button type="submit" class="button d-flex">Submit Quiz</button>
+                </div>
+        </form>
+    </div>
+
+    <script src="q17.js"></script>
+</body>
+</html>
